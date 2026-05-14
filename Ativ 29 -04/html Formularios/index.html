@@ -1,0 +1,193 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: ______________________
+
+Descrição: Formulário HTML5.
+
+Data: __/__/____
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <p>O formulario de cadastro deve ser desenvolvido aqui</p>
+
+            <form id="formCadastro">
+                
+                
+                <fieldset>
+                    <form id="formDadosPessoais">
+                    <legend>Dados Pessoais</legend>
+                        
+                    <section>
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+
+                    <p>Email:</p>
+                    <input type="email" id="email" name="email" required minlength="3" placeholder="exemolo@email.com:">
+
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                    </section>
+                    </form>
+
+                </fieldset>
+
+                <fieldset>
+                    
+                    <form id="formInformações">
+                    <legend>Informações</legend>
+                        
+                    <section>
+                    <p>Gênero</p>
+                    
+                    <input type="radio" name="genero"  id=”masc” value="masculino"> 
+                    <label for=”masc”>Masculino</label>
+                    <input type="radio" name="genero" id=”femi” value="feminino">
+                    <label for=”femi”>Feminino</label>
+                    <input type="radio" name="genero" id=”outr” value="Outro">
+                    <label for=”outr”>Outro</label><br>
+                   </section>
+
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <form id="formInteresses">
+                        <legend>Interesses</legend>
+                        
+                    <section>
+                    <input type="checkbox" name="Interesses"  id=”tec” value="Tecnologia"> 
+                    <label for=”tec”>Tecnologia</label>
+
+                    <input type="checkbox" name="Interesses"  id="Esp” value="Esportes"> 
+                    <label for=”Esp”>Esportes</label>
+
+                    <input type="checkbox" name="Interesses"  id=”Mús” value="Música"> 
+                    <label for=”Mús”>Música</label>
+
+                    <input type="checkbox" name="Interesses"  id=”Jog” value="Jogos"> 
+                    <label for=”Jog”>Jogos</label>
+                   </section>
+
+                    </form>
+              </fieldset>
+
+               <fieldset>
+                <form id="formEstado">
+                <legend>Estado</legend>
+
+                  <select id="Est" name="Estado">
+                   <option value="" selected disabled>Selecione</option>
+                   <option value="Acre">Acre</option>
+                   <option value="Alagoas">Alagoas</option>
+                   <option value="Amapá">Amapá</option>
+                   <option value="Amazonas">Amazonas</option>
+                   <option value="Bahia">Bahia</option>
+                   <option value="Ceará">Ceará</option>
+                   <option value="Espírito Santo">Espírito Santo</option>
+                   <option value="Goiás">Goiás</option>
+                   <option value="Maranhão">Maranhão</option>
+                   <option value="Mato Grosso">Mato Grosso</option>
+                   <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                   <option value="Minas Gerais">Minas Gerais</option>
+                   <option value="Pará">Pará</option>
+                   <option value="Paraíba">Paraíba</option>
+                   <option value="Paraná">Paraná</option>
+                   <option value="Pernambuco">Pernambuco</option>
+                   <option value="Piauí">Piauí</option>
+                   <option value="Rio de Janeiro">Rio de Janeiro</option>
+                   <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                   <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                   <option value="Rondônia">Rondônia</option>
+                   <option value="Roraima">Roraima</option>
+                   <option value="Santa Catarina">Santa Catarina</option>
+                   <option value="São Paulo">São Paulo</option>
+                   <option value="Sergipe">Sergipe</option>
+                   <option value="Tocantins">Tocantins</option>
+                   <option value="Distrito Federal">Distrito Federal</option>
+                </select>
+
+                </form>
+               </fieldset>
+                        
+
+               <fieldset>
+                   <form id="formMensagem">
+                        <section>
+                        <legend>Mensagem:</legend>
+
+                        <input maxlength="30" name="Mensagem"  id=”Mensg” value="Mensagem">
+                        </section>
+
+                    </form>
+                </fieldset>
+
+                <fieldset>
+                    <form id="formUpload de Imagem">
+                        <section>
+                        <legend>Upload de imagem:</legend>
+
+                        <input type="file" name="Imagem"  id=”Imag” value="Upload de imagem"><br>
+   
+                        <input type="submit" name="Imagem"  id=”Imag” value="Enviar">
+                        <input type="reset" name="Imagem"  id=”Imag” value="Limpar">  
+                        </section>
+                        
+                        </form>
+                </fieldset>
+            
+
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentações">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
