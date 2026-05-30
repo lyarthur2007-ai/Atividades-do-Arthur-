@@ -1,0 +1,272 @@
+:root{
+    --altura-header:20vh;
+    --altura-article:30vh;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family:Arial,sans-serif;
+    font-size:16px;
+    background:#fff;
+    color:black;
+}
+
+html, body{
+    height:100%;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#e4e6e7;
+    padding:15px 30px;
+    border-radius:10px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+#logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#logo-img{
+    width:80px;
+    height:80px;
+    border-radius:10px;
+}
+
+h1{
+    color:black;
+}
+
+/* MENU */
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+    flex-wrap:wrap;
+    row-gap: 10px;
+}
+
+nav a{
+    color:#353434;
+    text-decoration:none;
+}
+
+/* MAIN */
+
+main{
+    flex:1;
+    text-align:center;
+    padding:20px;
+}
+
+#header-main h2{
+    color:rgb(104,104,133);
+    font-size:clamp(28px,5vw,48px);
+}
+
+h4{
+    color:rgb(104,104,133);
+    font-size:18px;
+}
+
+/* CONTAINER */
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+/* ARTICLE */
+
+article{
+    background:#fff;
+    padding:15px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* CARD */
+
+.card{
+    width:18rem;
+    border:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* IMAGEM */
+
+article img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+/* TEXTO */
+
+article h4{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+article p{
+    text-align:center;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+/* BOTÃO */
+
+.botao{
+    display:flex;
+    justify-content:center;
+}
+
+.btn{
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.Naturale,
+.Marmo,
+.Minerale{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+
+#prooduto{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/* BOTÃO */
+
+button{
+    margin-top:auto;
+    background:rgb(34,114,23);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+    
+}
+
+button:hover{
+    background:rgb(27,88,18);
+}
+
+/* SOBRE */
+
+#Sobre{
+    background:#797777;
+    color:white;
+    margin-bottom:20px;
+    padding:30px;
+    line-height:1.8;
+}
+
+/* CONTATO */
+
+#Contato{
+    background:#fff;
+    text-align:center;
+    margin:10px;
+    padding:20px;
+    border-radius:5px;
+    border:2px solid #c9c9c9;
+}
+
+#Contato form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+}
+
+#Contato textarea{
+    resize:none;
+    width:100%;
+    max-width:500px;
+}
+
+#Contato input{
+    width:100%;
+    max-width:500px;
+    padding:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#adadad;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* RESPONSIVIDADE */
+
+#menu {
+    display: none;
+}
+
+.navegador {
+    display: block;
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    #header-main h2{
+        font-size:32px;
+    }
+
+    article{
+        max-width:90%;
+    }
+
+    #menu {
+    display: block; 
+}
+
+.navegador {
+    display: block;
+}
+
+}
