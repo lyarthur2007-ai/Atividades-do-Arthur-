@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Senha:</p>
+    <p id="mensagem"></p>
+    <input type="password" id="senha" oninput="validaSenha()" placeholder="Digite a senha">
+    <button type="button" id="botaoM">Mostrar</button>
+    <br>
+    <label>
+        <input type="checkbox" name="estudante" id="souestudante" onchange="souestudante()">Sou Estudante
+    </label>
+
+    <main>
+        <br>
+        <fieldset>
+
+            <div id="formulario">
+                <label>Curso:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Instituição:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Período:</label>
+                <input type="date"> a <input type="date">
+            </div>
+
+        </fieldset>
+    </main>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
